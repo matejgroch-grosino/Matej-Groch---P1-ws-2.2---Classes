@@ -1,0 +1,14 @@
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/bin/Debug/net10.0/Classes-cvicenia
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/bin/Debug/net10.0/Classes-cvicenia.deps.json
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/bin/Debug/net10.0/Classes-cvicenia.runtimeconfig.json
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/bin/Debug/net10.0/Classes-cvicenia.dll
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/bin/Debug/net10.0/Classes-cvicenia.pdb
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/Classes-cvicenia.GeneratedMSBuildEditorConfig.editorconfig
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/Classes-cvicenia.AssemblyInfoInputs.cache
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/Classes-cvicenia.AssemblyInfo.cs
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/Classes-cvicenia.csproj.CoreCompileInputs.cache
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/Classes-cvicenia.dll
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/refint/Classes-cvicenia.dll
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/Classes-cvicenia.pdb
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/Classes-cvicenia.genruntimeconfig.cache
+/Users/grosino/RiderProjects/Classes-cvicenia/Classes-cvicenia/obj/Debug/net10.0/ref/Classes-cvicenia.dll
