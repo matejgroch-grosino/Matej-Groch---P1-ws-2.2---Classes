@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Classes-cvicenia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35a461f8bf9e170602b985e81cefccf030c37123")]
 [assembly: System.Reflection.AssemblyProductAttribute("Classes-cvicenia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Classes-cvicenia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,19 +6,58 @@ class Program
     {
         Hrdina Hrdina1 = new Hrdina();
         Hrdina1.meno = "Ironman";
-        Hrdina1.zdravie = 50;
-        Hrdina1.energia = 150;
+        Hrdina1.zdravie = 100;
+        Hrdina1.energia = 100;
 
         Hrdina Hrdina2 = new Hrdina();
         Hrdina2.meno = "batman";
-        Hrdina2.zdravie = 45;
+        Hrdina2.zdravie = 100;
         Hrdina2.energia = 100;
 
 
-        int silaUtoku = 20;
-        while (Hrdina1.zdravie>0 && Hrdina2.zdravie>0)
+        Random randomiser = new Random();
+        int silaUtoku1 = randomiser.Next(10,30);
+        int silaUtoku2 = randomiser.Next(10, 30);
+        while (!(Hrdina1.zdravie==0||Hrdina2.zdravie==0))
         {
-            
+            Hrdina1.regeneracia();
+            Hrdina2.regeneracia();
+            bool PodarilSaUtok = Hrdina1.Utok(silaUtoku1);
+            if (PodarilSaUtok)
+            {
+                Hrdina2.PrijmiZranenie(silaUtoku1);
+                Console.WriteLine(Hrdina1.meno+" trafil!");
+                Console.WriteLine(Hrdina2.meno+" ma uz len "+Hrdina2.zdravie+" zdravia");
+            }
+            else
+            {
+                Console.WriteLine(Hrdina1.meno+" je unaveny!");
+            }
+
+            PodarilSaUtok = Hrdina2.Utok(silaUtoku2);
+            if (PodarilSaUtok)
+            {
+                Hrdina1.PrijmiZranenie(silaUtoku2);
+                Console.WriteLine(Hrdina2.meno+" trafil!");
+                Console.WriteLine(Hrdina1.meno+" ma uz len "+Hrdina1.zdravie+" zdravia");
+            }
+            else
+            {
+                Console.WriteLine(Hrdina2.meno+" je unaveny!");
+            }
+        }
+
+        if (Hrdina1.zdravie == 0 && Hrdina2.zdravie == 0)
+        {
+            Console.WriteLine("Remiza!");
+        }
+        else if (Hrdina1.zdravie == 0)
+        {
+            Console.WriteLine(Hrdina2.meno+" vyhral!");
+        }
+        else if (Hrdina2.zdravie == 0)
+        {
+            Console.WriteLine(Hrdina1.meno+" vyhral!");
         }
     }
 }
@@ -59,5 +98,10 @@ class Hrdina
         }
 
         return zdravie;
+    }
+
+    public void regeneracia()
+    {
+        energia = energia + 5;
     }
 }
