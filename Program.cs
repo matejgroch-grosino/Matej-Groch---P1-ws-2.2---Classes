@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Hrdina Hrdina1 = new Hrdina();
+       /*Hrdina Hrdina1 = new Hrdina();
         Hrdina1.meno = "Ironman";
         Hrdina1.zdravie = 100;
         Hrdina1.energia = 100;
@@ -58,7 +58,36 @@ class Program
         else if (Hrdina2.zdravie == 0)
         {
             Console.WriteLine(Hrdina1.meno+" vyhral!");
-        }
+        }*/
+
+       Ucet Ucet1 = new Ucet();
+       Ucet Ucet2 = new Ucet();
+
+       Ucet1.cislo = "SK12345789";
+       Ucet1.majitel = "Ivo";
+       Ucet1.zostatok = 200;
+
+       Ucet2.cislo = "SK93189391384";
+       Ucet2.majitel = "Vajo";
+       Ucet2.zostatok = 500;
+
+       Ucet1.VlozPeniaze(100);
+       Console.WriteLine($"Vlozil si 100 tvoj stav uctu je {Ucet1.zostatok}");
+
+       Ucet1.VyberPeniaze(100);
+       Console.WriteLine($"Vybral si 100 tvoj stav uctu je {Ucet1.zostatok}");
+       
+       Ucet2.VlozPeniaze(200);
+       Console.WriteLine($"Vlozil si 200 tvoj stav uctu je {Ucet2.zostatok}");
+
+       Ucet2.VyberPeniaze(100);
+       Console.WriteLine($"Vybral si 100 tvoj stav uctu je {Ucet2.zostatok}");
+       
+       Ucet1.VlozPeniaze(-100);
+       Console.WriteLine($"Vlozil si -100 tvoj stav uctu je {Ucet1.zostatok}");
+       
+       Ucet2.VyberPeniaze(1000);
+       Console.WriteLine($"Vybral si 1000 tvoj stav uctu je {Ucet2.zostatok}");
     }
 }
 
@@ -103,5 +132,47 @@ class Hrdina
     public void regeneracia()
     {
         energia = energia + 5;
+    }
+}
+
+
+class Ucet
+{
+    public string cislo = "";
+    public string majitel = "";
+    public decimal zostatok = 0;
+
+    public decimal VlozPeniaze(decimal suma)
+    {
+        if (suma < 0)
+        {
+            Console.WriteLine("nemozes vlozit zapornu sumu");
+            return zostatok;
+        }
+        else
+        {
+            zostatok= zostatok + suma;
+            return zostatok;
+
+        }
+    }
+    public bool VyberPeniaze(decimal suma)
+    {
+        if (suma < 0)
+        {
+            Console.WriteLine("Suma musi byt kladna");
+            return false;
+        }
+
+        if (zostatok >= suma)
+        {
+            zostatok = zostatok - suma;
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("Nemas dostatok penati na ucte");
+            return false;
+        }
     }
 }
